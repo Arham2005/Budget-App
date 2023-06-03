@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./apps.js"></script>
+</head>
+<body>
+    <h1>Budgeting App</h1>
+  
+  <div class="container">
+    <div class="input-section">
+      <h2>Income</h2>
+      <input type="number" id="incomeInput" placeholder="Enter income amount">
+      <button onclick="addIncome()">Add Income</button>
+    </div>
+    
+    <div class="input-section">
+      <h2>Expenses</h2>
+      <input type="text" id="expenseNameInput" placeholder="Enter expense name">
+      <input type="number" id="expenseAmountInput" placeholder="Enter expense amount">
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+    
+    <div class="summary-section">
+      <h2>Summary</h2>
+      <p>Total Income: <span id="totalIncome">0</span></p>
+      <p>Total Expenses: <span id="totalExpenses">0</span></p>
+      <p>Remaining Budget: <span id="remainingBudget">0</span></p>
+    </div>
+  </div>
+</body>
+</html>
